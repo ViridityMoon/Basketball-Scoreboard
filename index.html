@@ -1,0 +1,32 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="new-game" onclick="clearAll(homeScore, guestScore)">New Game</div>
+        <div class="container">
+            <div class="score-container">
+                <h3 class="score-heading">HOME</h3>
+                <h1 class="score-value" id="score-value-home">0<h1>
+                <div class="point-modifiers">
+                    <p class="point-modifier" id="home-1-pointer" onclick="onePoint(homeScore)">+1</p>
+                    <p class="point-modifier" id="home-2-pointer" onclick="twoPoint(homeScore)">+2</p>
+                    <p class="point-modifier" id="home-3-pointer" onclick="threePoint(homeScore)">+3</p>
+                </div>
+            </div>
+            <div class="score-container">
+                <h3 class="score-heading">GUEST</h3>
+                <h1 class="score-value" id="score-value-guest">0<h1>
+                <div class="point-modifiers">
+                    <p class="point-modifier" id="guest-1-pointer" onclick="onePoint(guestScore)">+1</p>
+                    <p class="point-modifier" id="guest-2-pointer" onclick="twoPoint(guestScore)">+2</p>
+                    <p class="point-modifier" id="guest-3-pointer" onclick="threePoint(guestScore)">+3</p>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
